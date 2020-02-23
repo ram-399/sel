@@ -16,7 +16,7 @@ public class addressbook {
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-	    driver.get("http://192.168.0.107:32768/addressbook/");
+	    driver.get("http://192.168.0.106:32768/addressbook/");
 		}
    @Test
   public void verifyaddbook() {
