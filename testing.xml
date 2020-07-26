@@ -2,7 +2,7 @@
 <suite name="WebDriver">
 <test name="Test">
 <classes>
-<class name="TestNG.addressbook"/>
+<class name="com.nokia.ExtentReportDemo2"/>
 </classes>
 </test>
 </suite>
