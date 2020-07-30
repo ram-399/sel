@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7963" started-at="2020-07-26T07:33:32Z" finished-at="2020-07-26T07:33:40Z">
+  <suite name="Default suite" duration-ms="11004" started-at="2020-07-29T14:39:23Z" finished-at="2020-07-29T14:39:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7963" started-at="2020-07-26T07:33:32Z" finished-at="2020-07-26T07:33:40Z">
+    <test name="Default test" duration-ms="11004" started-at="2020-07-29T14:39:23Z" finished-at="2020-07-29T14:39:34Z">
       <class name="com.nokia.ExtentReportDemo2">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.nokia.ExtentReportDemo2@4883b407]" name="setup" is-config="true" duration-ms="221" started-at="2020-07-26T07:33:32Z" finished-at="2020-07-26T07:33:32Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.nokia.ExtentReportDemo2@4883b407]" name="setup" is-config="true" duration-ms="254" started-at="2020-07-29T14:39:23Z" finished-at="2020-07-29T14:39:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.nokia.ExtentReportDemo2@4883b407]" name="loginTest" duration-ms="5942" started-at="2020-07-26T07:33:32Z" finished-at="2020-07-26T07:33:38Z">
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.nokia.ExtentReportDemo2@4883b407]" name="loginTest" duration-ms="8743" started-at="2020-07-29T14:39:23Z" finished-at="2020-07-29T14:39:32Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -22,7 +22,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.nokia.ExtentReportDemo2.loginTest(ExtentReportDemo2.java:47)
+at com.nokia.ExtentReportDemo2.loginTest(ExtentReportDemo2.java:48)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -54,7 +54,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.nokia.ExtentReportDemo2@4883b407]" name="tearDown" is-config="true" duration-ms="1762" started-at="2020-07-26T07:33:38Z" finished-at="2020-07-26T07:33:40Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.nokia.ExtentReportDemo2@4883b407]" name="tearDown" is-config="true" duration-ms="1975" started-at="2020-07-29T14:39:32Z" finished-at="2020-07-29T14:39:34Z">
           <params>
             <param index="0">
               <value>

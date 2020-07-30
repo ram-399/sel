@@ -21,12 +21,13 @@ public class ExtentReportDemo2
 	 ExtentReports extent;
 	 ExtentTest logger;
 	 WebDriver driver;
+	 String concatenate=".";
 	
         // This code will run before executing any testcase
 	@BeforeMethod
 	public void setup()
 	{
-	    ExtentHtmlReporter reporter=new ExtentHtmlReporter("./test-output/learn_automation2.html");
+	    ExtentHtmlReporter reporter=new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-out/learn_automation2.html");
 		
 	    extent = new ExtentReports();
 	    
@@ -40,7 +41,7 @@ public class ExtentReportDemo2
 	@Test
 	public void loginTest() throws IOException
 	{
-		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","chromedriver");
 		driver=new ChromeDriver();
 		driver.get("http://www.google.com");
 		System.out.println("title is "+driver.getTitle());
@@ -56,7 +57,8 @@ public class ExtentReportDemo2
 		
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
-			String temp=Utility.getScreenshot(driver);
+			//String temp=concatenate+Utility.getScreenshot(driver);
+			String temp=concatenate+Utility.getScreenshot(driver);
 			
 			logger.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 		}
