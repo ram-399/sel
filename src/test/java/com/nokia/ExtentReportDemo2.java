@@ -45,7 +45,7 @@ public class ExtentReportDemo2
 		driver=new ChromeDriver();
 		driver.get("http://www.google.com");
 		System.out.println("title is "+driver.getTitle());
-		Assert.assertTrue(driver.getTitle().contains("Rambabu"));
+		Assert.assertTrue(driver.getTitle().contains("Google"));
 		logger.log(Status.PASS,"Test case is passed");
 		//logger.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 	}
@@ -60,7 +60,7 @@ public class ExtentReportDemo2
 			//String temp=concatenate+Utility.getScreenshot(driver);
 			String temp=concatenate+Utility.getScreenshot(driver);
 			
-			logger.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
+			logger.pass(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 		}
 		
 		extent.flush();
