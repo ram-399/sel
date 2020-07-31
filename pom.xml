@@ -44,7 +44,8 @@
   <version>2.18.1</version>
   <configuration>
   <suiteXmlFiles>
-  <chmod file="chromedriver" perm="ugo+rx" />
+	  <!--
+  <chmod file="chromedriver" perm="ugo+rx" /> -->
   <suiteXmlFile>testing.xml</suiteXmlFile>
   </suiteXmlFiles>
   </configuration>
